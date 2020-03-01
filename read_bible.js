@@ -7,7 +7,8 @@ var arrCount = [];   //array de armazenamento e contagem de palavras
 lerArquivo();
 
 function lerArquivo(){  //recebe o arquivo como input
-   var data = fs.readFileSync('./input/biblia-pt-br.txt','utf8');
+   var data = fs.readFileSync('./input/biblia-en-us.txt','utf8'); //english version
+   //var data = fs.readFileSync('./input/biblia-pt-br.txt','utf8');  //portuguese version
    regexData(data);
 }
 
